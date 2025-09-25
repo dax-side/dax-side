@@ -11,7 +11,7 @@
 
 ## Backend Developer Building Systems That Scale
 
-I develop **production-ready backend systems** for businesses that need reliable, scalable infrastructure. My code currently runs 24/7 serving real users, processing financial transactions, and powering business operations across multiple industries.
+I develop **production-ready backend systems** for businesses that need reliable, scalable infrastructure. My code currently runs 24/7 serving real users.
 
 **What I deliver:**
 - **Financial Systems** - Escrow platforms, payment processing, multi-wallet architectures
