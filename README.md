@@ -62,7 +62,7 @@ I've deployed systems with Nginx reverse proxies, PM2 process management, and fu
 - **Features**: Real-time messaging, inventory management, analytics dashboards, rewards system
 - **Security**: JWT auth, role-based access, XSS protection, comprehensive rate limiting
 - **DevOps**: Nginx reverse proxy, PM2 process management, Let's Encrypt SSL
-- **Monitoring**: Prometheus, Grafana, centralized logging
+- **Monitoring**: centralized logging
 - **Platform**: [Heart of House](https://platform.heartofhouse.io/)
 
 ### Recipe Sharing API
