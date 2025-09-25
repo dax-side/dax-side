@@ -186,7 +186,7 @@ const damola = {
 };
 ```
 
-## 🎯 Recent Work & Focus
+## Recent Work & Focus
 
 <div align="center">
   <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="400" alt="Working on Projects">
@@ -198,7 +198,7 @@ const damola = {
 <tr>
 <td width="50%">
 
-**🏢 Business Platforms**  
+** Business Platforms**  
 - Multi-tenant B2B systems
 - Real-time messaging
 - Analytics dashboards
