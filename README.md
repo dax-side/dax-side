@@ -198,7 +198,7 @@ const damola = {
 <tr>
 <td width="50%">
 
-** Business Platforms**  
+Business Platforms
 - Multi-tenant B2B systems
 - Real-time messaging
 - Analytics dashboards
@@ -208,7 +208,6 @@ const damola = {
 </td>
 </tr>
 </table>
-
 ## 🌐 Let's Connect
 
 <div align="center">
