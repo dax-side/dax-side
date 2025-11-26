@@ -8,7 +8,7 @@ Backend developer building with Node.js and TypeScript.
 
 ## What I work on
 
-I build backend systems - APIs, databases, authentication, real-time features. Currently learning system design patterns and working on production applications.
+I build backend systems APIs, databases, authentication, real-time features. Currently learning system design patterns and working on production applications.
 
 **Recent work:**
 - B2B platform for liquor stores and vendors (live in production)
