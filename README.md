@@ -33,11 +33,17 @@ I build backend systems APIs, databases, authentication, real-time features. Cur
 - Clean architecture patterns
 
 ## Projects
+
 **[Weather Forecast Service](https://github.com/dax-side/weather_forecast_service)**  
-REST API with caching layer deployed on Railway
+REST API with intelligent caching and rate limiting - [Live site](https://weatherforecastservice-production.up.railway.app/)
 
 **Heart of House Platform** (Client work)  
 B2B marketplace for liquor stores and vendors - [Live site](https://platform.heartofhouse.io/)
+
+**[Swiftmeal](https://github.com/Swiftmealng/Swiftmealng)**  
+Full-stack food delivery platform with real-time order tracking, rider management, and payment processing  
+[Live site](https://swiftmeal-frontend-production.up.railway.app/) | [API Documentation](https://swiftmealng-production.up.railway.app/api-docs/)  
+*Solo development: Node.js/TypeScript backend, React frontend, PostgreSQL, WebSocket, Paystack integration*
 
 ---
 
