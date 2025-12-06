@@ -43,7 +43,7 @@ B2B marketplace for liquor stores and vendors - [Live site](https://platform.hea
 **[Swiftmeal](https://github.com/Swiftmealng/Swiftmealng)**  
 Full-stack food delivery platform with real-time order tracking, rider management, and payment processing  
 [Live site](https://swiftmeal-frontend-production.up.railway.app/) | [API Documentation](https://swiftmealng-production.up.railway.app/api-docs/)  
-*Solo development: Node.js/TypeScript backend, React frontend, PostgreSQL, WebSocket, Paystack integration*
+* Node.js/TypeScript backend, React frontend, PostgreSQL, WebSocket, Paystack integration*
 
 ---
 
