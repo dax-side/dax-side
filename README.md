@@ -6,12 +6,31 @@
 
 Backend developer building with Node.js and TypeScript.
 
+## Published npm packages
+
+I build developer tools that cut down boilerplate.
+
+**[@dax-side/jwt-abstraction](https://www.npmjs.com/package/@dax-side/jwt-abstraction)** - JWT auth in 3 lines  
+Handles access/refresh tokens, Express middleware, error types. 100% test coverage. Used in 3 production projects.  
+[Docs](https://dax-side.github.io/jwt-abstraction-site) | [npm](https://www.npmjs.com/package/@dax-side/jwt-abstraction) | [GitHub](https://github.com/dax-side/jwt-abstraction)
+
+**[Express Journey Mapper](https://github.com/dax-side/express-journey-mapper)** - Auto-generate OpenAPI docs  
+Reads your Express routes and generates Swagger documentation. No manual yaml editing.  
+[npm](https://www.npmjs.com/package/express-journey-mapper)
+
+**[error-telex](https://www.npmjs.com/package/error-telex)** - TypeScript error tracking SDK  
+Co-built during HNG internship. Sends error reports to Telex backend with automatic retry and filtering.  
+[npm](https://www.npmjs.com/package/error-telex)
+
+---
+
 ## What I work on
 
-I build backend systems APIs, databases, authentication, real-time features. Currently learning system design patterns and working on production applications.
+Backend systems: APIs, databases, authentication, real-time features, production deployment.
 
 **Recent work:**
 - B2B platform for liquor stores and vendors (live in production)
+- Automated CI/CD pipeline with health checks and rollback
 - Weather API service with intelligent caching
 - Working on: Analytics platform with event tracking SDK
 
@@ -23,36 +42,39 @@ I build backend systems APIs, databases, authentication, real-time features. Cur
 
 **Backend:** Node.js, TypeScript, Express, NestJS, GraphQL (Apollo Server)  
 **Databases:** PostgreSQL, MongoDB, Redis, Prisma ORM  
-**Tools:** Docker, Nginx, PM2, AWS, Railway
+**DevOps:** GitHub Actions, PM2, Docker, Nginx, AWS EC2  
+**Tools:** Railway, Postman, k6, Artillery
 
 ## Current focus
 
-- Deepening understanding of transactions and concurrency
+- Production deployment and CI/CD automation
 - Database optimization and query performance
-- Building secure, scalable APIs
-- Clean architecture patterns
+- Building developer tools and libraries
+- System design patterns
 
 ## Projects
 
-**[Weather Forecast Service](https://github.com/dax-side/weather_forecast_service)**  
-REST API with intelligent caching and rate limiting - [Live site](https://weatherforecastservice-production.up.railway.app/)
+**Nevala Production Deployment System**  
+Built automated CI/CD pipeline with GitHub Actions after staging server crashed from missing .env variables. Implemented health checks, automatic rollback on failure, git stash for conflict prevention, and backup system (keeps 5 recent versions). Staging/production separation saved the main server when things broke.  
+Tech: GitHub Actions, PM2, AWS EC2, Bash, Health Monitoring
 
-**Heart of House Platform** (Client work)  
-B2B marketplace for liquor stores and vendors - [Live site](https://platform.heartofhouse.io/)
+**[E-commerce Microservices API](https://github.com/dax-side/ecommerce-microservices-api)**  
+Scaled performance from 48 to 716 req/sec by adding Redis caching, MongoDB connection pooling, and proper indexing. Load tested with k6 at 200 concurrent users.  
+Tech: Node.js, TypeScript, MongoDB, Redis, Docker, Nginx, Prometheus
+
+**[Weather Forecast Service](https://github.com/dax-side/weather_forecast_service)**  
+REST API with intelligent caching and rate limiting  
+[Live site](https://weatherforecastservice-production.up.railway.app/)
+
+**Heart of House Platform** (Client work - Backend)  
+Built the backend for a B2B marketplace connecting liquor stores and vendors. Real-time messaging with Socket.io, inventory management, automated rewards system, AWS S3 for invoice processing.  
+[Live site](https://platform.heartofhouse.io/) | [Sign up](https://platform.heartofhouse.io/auth/sign-up)  
+*Node.js, TypeScript, Express, MongoDB, Socket.io, AWS S3/EC2, PM2*
 
 **[Swiftmeal](https://github.com/Swiftmealng/Swiftmealng)**  
-Full-stack food delivery platform with real-time order tracking, rider management, and payment processing  
-[Live site](https://swiftmeal-frontend-production.up.railway.app/) | [API Documentation](https://swiftmealng-production.up.railway.app/api-docs/)  
-* Node.js/TypeScript backend, React frontend, PostgreSQL, WebSocket, Paystack integration*
-
----
-
-## GitHub Stats
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=dax-side&show_icons=true&theme=radical&hide_border=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dax-side&layout=compact&theme=radical&hide_border=true"/>
-</div>
+Full-stack food delivery platform with real-time order tracking, rider management, and payment processing.  
+[Live site](https://swiftmeal-frontend-production.up.railway.app/) | [API Docs](https://swiftmealng-production.up.railway.app/api-docs/)  
+*Node.js/TypeScript backend, React frontend, PostgreSQL, WebSocket, Paystack integration*
 
 ---
 
