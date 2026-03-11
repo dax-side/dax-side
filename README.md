@@ -71,6 +71,12 @@ Built the backend for a B2B marketplace connecting liquor stores and vendors. Re
 [Live site](https://platform.heartofhouse.io/) | [Sign up](https://platform.heartofhouse.io/auth/sign-up)  
 *Node.js, TypeScript, Express, MongoDB, Socket.io, AWS S3/EC2, PM2*
 
+**[CrossPay](https://crosspaymentf.pxxl.click/)**  
+Cross-border remittance app. Send GBP, settle in USDC on Polygon. Stripe integration for fiat deposits, WebSocket real-time transaction updates, flat 0.5% fee.  
+[Live site](https://crosspaymentf.pxxl.click/)  
+*Node.js, TypeScript, PostgreSQL, Stripe, Polygon Amoy, Socket.io, Pxxl*
+
+
 **[Swiftmeal](https://github.com/Swiftmealng/Swiftmealng)**  
 Full-stack food delivery platform with real-time order tracking, rider management, and payment processing.  
 [Live site](https://swiftmeal-frontend-production.up.railway.app/) | [API Docs](https://swiftmealng-production.up.railway.app/api-docs/)  
