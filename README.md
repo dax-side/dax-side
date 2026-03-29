@@ -45,7 +45,7 @@ Backend systems: APIs, databases, authentication, real-time features, production
 **DevOps:** GitHub Actions, PM2, Docker, Nginx, AWS EC2  
 **Tools:** Railway, Postman, k6, Artillery
 
-## Currently working on:**
+## Currently working on:
 - Adding presence indicators to [CollabEdit](https://github.com/dax-side/collab_edit) — see who's in the document and where
 - Proper undo that works in a multiplayer context
 - Performance work: ops were sending one at a time, DB writes weren't batched, index rebuilt on every keystroke. Fixing all of it.
