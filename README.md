@@ -74,9 +74,9 @@ Cross-border remittance app. Send GBP, settle in USDC on Polygon. Stripe integra
 [Live site](https://cross-payment-five.vercel.app/) | [GitHub](https://github.com/dax-side/cross_payment)  
 *Node.js, TypeScript, PostgreSQL, Stripe, Polygon Amoy, Socket.io, Pxxl*
 
-**[CollabEdit](https://collabeditf.pxxl.click/)**  
+**[CollabEdit](https://collab-edit-pink.vercel.app/)**  
 Built a real-time collaborative editor with a custom RGA-based CRDT no Yjs, no Automerge. Tombstone retention keeps late-arriving ops from breaking, and a per-document operation queue fixes paste scrambling across clients.  
-[Live site](https://collabeditf.pxxl.click/) | [GitHub](https://github.com/dax-side/collab_edit)  
+[Live site](https://collab-edit-pink.vercel.app/) | [GitHub](https://github.com/dax-side/collab_edit)  
 *Node.js, TypeScript, PostgreSQL, WebSocket, Prisma, React, Vite*
 
 **[Swiftmeal](https://github.com/Swiftmealng/Swiftmealng)**  
