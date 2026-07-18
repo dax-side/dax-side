@@ -6,6 +6,8 @@
 
 Backend developer building with Node.js and TypeScript.
 
+[Portfolio](https://damola.me/)
+
 ## Published npm packages
 
 I build developer tools that cut down boilerplate.
