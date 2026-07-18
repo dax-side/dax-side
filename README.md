@@ -46,9 +46,16 @@ Backend systems: APIs, databases, authentication, real-time features, production
 **Tools:** Railway, Postman, k6, Artillery
 
 ## Currently working on:
-- Adding presence indicators to [CollabEdit](https://github.com/dax-side/collab_edit) — see who's in the document and where
-- Proper undo that works in a multiplayer context
-- Performance work: ops were sending one at a time, DB writes weren't batched, index rebuilt on every keystroke. Fixing all of it.
+- Learning Go and working through the DevOps path on [Boot.dev](https://www.boot.dev/u/dax-side)
+
+## Writing
+
+I write about backend systems and building things that actually work.
+
+- [How Would I Build a Payment System That Doesn't Lose Money](https://dev.to/dax-side/how-would-i-build-a-payment-system-that-doesnt-lose-money-16ap)
+- [How Would I Build For Right Now](https://dev.to/dax-side/how-would-i-build-for-right-now-2fmm)
+- [I built an MCP server that syncs GitHub into Notion and generates AI reports](https://dev.to/dax-side/i-built-an-mcp-server-that-syncs-github-into-notion-and-generates-ai-reports-5ao6)
+- [I built a tool that shows developers what their backend costs the planet](https://dev.to/dax-side/i-built-a-tool-that-shows-developers-what-their-backend-costs-the-planet-jm1)
 
 ## Projects
 
