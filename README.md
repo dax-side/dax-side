@@ -4,7 +4,7 @@
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="400" alt="Coding Animation">
 </div>
 
-Backend developer building with Node.js and TypeScript.
+Backend & devops developer building with Node.js, TypeScript, and Go.
 
 [Portfolio](https://damola.me/)
 
@@ -13,42 +13,43 @@ Backend developer building with Node.js and TypeScript.
 I build developer tools that cut down boilerplate.
 
 **[@dax-side/jwt-abstraction](https://www.npmjs.com/package/@dax-side/jwt-abstraction)** - JWT auth in 3 lines  
-Handles access/refresh tokens, Express middleware, error types. 100% test coverage. Used in 3 production projects.  
+Adds login tokens to an Express app in three lines instead of writing the auth flow from scratch. It manages access and refresh tokens, handles the middleware, and throws proper error types when something's wrong. Fully tested, running in three production apps.  
 [Docs](https://dax-side.github.io/jwt-abstraction-site) | [npm](https://www.npmjs.com/package/@dax-side/jwt-abstraction) | [GitHub](https://github.com/dax-side/jwt-abstraction)
 
 **[Express Journey Mapper](https://github.com/dax-side/express-journey-mapper)** - Auto-generate OpenAPI docs  
-Reads your Express routes and generates Swagger documentation. No manual yaml editing.  
+Scans an Express app's routes and writes the API documentation for you. No sitting down to hand-write a yaml file after every change.  
 [npm](https://www.npmjs.com/package/express-journey-mapper)
 
 **[error-telex](https://www.npmjs.com/package/error-telex)** - TypeScript error tracking SDK  
-Co-built during HNG internship. Sends error reports to Telex backend with automatic retry and filtering.  
+Catches errors in a TypeScript app and forwards them to a backend, with retries and filtering built in so you're not flooded with duplicate reports. Co-built during my HNG internship.  
 [npm](https://www.npmjs.com/package/error-telex)
 
 ---
 
 ## What I work on
 
-Backend systems: APIs, databases, authentication, real-time features, production deployment.
+I build the systems behind an app: the APIs, the database, how users log in, how data updates in real time, and how the whole thing gets shipped and kept running.
 
 **Recent work:**
-- B2B platform for liquor stores and vendors (live in production)
-- Automated CI/CD pipeline with health checks and rollback
-- Weather API service with intelligent caching
-- Working on: Analytics platform with event tracking SDK
+- A B2B platform connecting liquor stores and vendors, currently live
+- A deploy pipeline that checks the app is healthy before switching traffic to it, and rolls back automatically if it isn't
+- A weather API that caches results so it isn't hitting the same forecast provider on every request
 
 ## Tech stack
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs,typescript,javascript,python,nestjs,express,graphql,postgresql,mongodb,redis,prisma,docker,nginx,aws" />
+  <img src="https://skillicons.dev/icons?i=nodejs,typescript,javascript,python,go,nestjs,express,graphql,postgresql,mongodb,redis,prisma,docker,kubernetes,linux,nginx,aws" />
 </div>
 
-**Backend:** Node.js, TypeScript, Express, NestJS, GraphQL (Apollo Server)  
+**Backend:** Node.js, TypeScript, Go, Express, NestJS, GraphQL (Apollo Server)  
 **Databases:** PostgreSQL, MongoDB, Redis, Prisma ORM  
-**DevOps:** GitHub Actions, PM2, Docker, Nginx, AWS EC2  
-**Tools:** Railway, Postman, k6, Artillery
+**devops:** Docker, Kubernetes (admission control), GitHub Actions, PM2, Nginx, AWS (EC2, RDS, S3, ECS, IAM, VPC, subnetting, internet gateways), Linux  
+**Tools:** Git, Postman, MongoDB Compass, TablePlus, k6, Artillery
 
-## Currently working on:
-- Learning Go and working through the DevOps path on [Boot.dev](https://www.boot.dev/u/dax-side)
+## Currently working on
+
+- A command-line tool in Go that searches your files by name, even when you misspell what you're looking for. [local-file-search](https://github.com/dax-side/local-file-search)
+- Running real deployments on Kubernetes and AWS, past what the [Boot.dev](https://www.boot.dev/u/dax-side) course covers
 
 ## Writing
 
@@ -62,46 +63,42 @@ I write about backend systems and building things that actually work.
 ## Projects
 
 **Nevala Production Deployment System**  
-Built automated CI/CD pipeline with GitHub Actions after staging server crashed from missing .env variables. Implemented health checks, automatic rollback on failure, git stash for conflict prevention, and backup system (keeps 5 recent versions). Staging/production separation saved the main server when things broke.  
+The staging server crashed once because a `.env` file went missing. After that I built a pipeline that checks the app's health before it goes live, rolls back on its own if a deploy fails, stashes any uncommitted changes so they don't cause conflicts, and keeps the last five versions as backups. Staging and production run separately now, which is what kept the main server up the next time something went wrong.  
 Tech: GitHub Actions, PM2, AWS EC2, Bash, Health Monitoring
 
 **[E-commerce Microservices API](https://github.com/dax-side/ecommerce-microservices-api)**  
-Scaled performance from 48 to 716 req/sec by adding Redis caching, MongoDB connection pooling, and proper indexing. Load tested with k6 at 200 concurrent users.  
+Took an API from 48 requests a second to 716 by caching frequent lookups, reusing database connections instead of opening new ones each time, and adding proper indexes so queries stop scanning the whole table. Load tested at 200 concurrent users.  
 Tech: Node.js, TypeScript, MongoDB, Redis, Docker, Nginx, Prometheus
 
 **[Weather Forecast Service](https://github.com/dax-side/weather_forecast_service)**  
-REST API with intelligent caching and rate limiting  
+A weather API that caches results and limits how often any one client can call it.  
 [Live site](https://weatherforecastservice-production.up.railway.app/)
 
-**Heart of House Platform** (Client work - Backend)  
-Built the backend for a B2B marketplace connecting liquor stores and vendors. Real-time messaging with Socket.io, inventory management, automated rewards system, AWS S3 for invoice processing.  
+**Heart of House Platform** (Client work, backend)  
+The backend for a marketplace connecting liquor stores and vendors. Messages update live between buyers and sellers, stock levels track automatically, vendors earn rewards on repeat orders, and invoices get processed and stored in the cloud.  
 [Live site](https://platform.heartofhouse.io/) | [Sign up](https://platform.heartofhouse.io/auth/sign-up)  
-*Node.js, TypeScript, Express, MongoDB, Socket.io, AWS S3/EC2, PM2*
+Tech: Node.js, TypeScript, Express, MongoDB, Socket.io, AWS S3/EC2, PM2
 
 **[CrossPay](https://cross-payment-five.vercel.app/)**  
-Cross-border remittance app. Send GBP, settle in USDC on Polygon. Stripe integration for fiat deposits, WebSocket real-time transaction updates, flat 0.5% fee.  
+Send money in GBP, and the person on the other end receives it as USDC on Polygon. Deposits come in through Stripe, transaction status updates live on screen instead of needing a refresh, and the fee is a flat 0.5%.  
 [Live site](https://cross-payment-five.vercel.app/) | [GitHub](https://github.com/dax-side/cross_payment)  
-*Node.js, TypeScript, PostgreSQL, Stripe, Polygon Amoy, Socket.io, Pxxl*
+Tech: Node.js, TypeScript, PostgreSQL, Stripe, Polygon Amoy, Socket.io, Pxxl
 
 **[CollabEdit](https://collab-edit-pink.vercel.app/)**  
-Built a real-time collaborative editor with a custom RGA-based CRDT no Yjs, no Automerge. Tombstone retention keeps late-arriving ops from breaking, and a per-document operation queue fixes paste scrambling across clients.  
+A real-time editor where multiple people can type into the same document at once without overwriting each other. I built the conflict resolution myself instead of using an existing library like Yjs or Automerge. Deleted text sticks around as a hidden marker for a while so an edit that arrives late doesn't corrupt the document, and each document processes changes through its own queue so pasting text doesn't get scrambled across different people's screens.  
 [Live site](https://collab-edit-pink.vercel.app/) | [GitHub](https://github.com/dax-side/collab_edit)  
-*Node.js, TypeScript, PostgreSQL, WebSocket, Prisma, React, Vite*
+Tech: Node.js, TypeScript, PostgreSQL, WebSocket, Prisma, React, Vite
 
 **[Swiftmeal](https://github.com/Swiftmealng/Swiftmealng)**  
-Full-stack food delivery platform with real-time order tracking, rider management, and payment processing.  
+A food delivery platform where you can track your order and the rider in real time, and payment goes through automatically at checkout.  
 [Live site](https://swiftmeal-frontend-production.up.railway.app/) | [API Docs](https://swiftmealng-production.up.railway.app/api-docs/)  
-*Node.js/TypeScript backend, React frontend, PostgreSQL, WebSocket, Paystack integration*
+Tech: Node.js/TypeScript backend, React frontend, PostgreSQL, WebSocket, Paystack integration
 
 ---
 
 ## Get in touch
 
-<div align="center">
-  <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60">
-</div>
-
-Open to backend developer roles and interesting projects.
+Open to backend and devops roles, and interesting projects.
 
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:damolaadegbite77@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/damola-adegbite)
