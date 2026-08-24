@@ -4,7 +4,7 @@
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="400" alt="Coding Animation">
 </div>
 
-Backend & devops developer building with Node.js, TypeScript, and Go.
+Backend & DevOps Engineer building with Node.js, TypeScript, and Go.
 
 [Portfolio](https://damola.me/)
 
