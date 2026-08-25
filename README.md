@@ -61,38 +61,21 @@ I write about backend systems and building things that actually work.
 - [I built a tool that shows developers what their backend costs the planet](https://dev.to/dax-side/i-built-a-tool-that-shows-developers-what-their-backend-costs-the-planet-jm1)
 
 ## Projects
-
-**Nevala Production Deployment System**  
-The staging server crashed once because a `.env` file went missing. After that I built a pipeline that checks the app's health before it goes live, rolls back on its own if a deploy fails, stashes any uncommitted changes so they don't cause conflicts, and keeps the last five versions as backups. Staging and production run separately now, which is what kept the main server up the next time something went wrong.  
-Tech: GitHub Actions, PM2, AWS EC2, Bash, Health Monitoring
-
-**[E-commerce Microservices API](https://github.com/dax-side/ecommerce-microservices-api)**  
-Took an API from 48 requests a second to 716 by caching frequent lookups, reusing database connections instead of opening new ones each time, and adding proper indexes so queries stop scanning the whole table. Load tested at 200 concurrent users.  
-Tech: Node.js, TypeScript, MongoDB, Redis, Docker, Nginx, Prometheus
-
-**[Weather Forecast Service](https://github.com/dax-side/weather_forecast_service)**  
-A weather API that caches results and limits how often any one client can call it.  
-[Live site](https://weatherforecastservice-production.up.railway.app/)
-
-**Heart of House Platform** (Client work, backend)  
-The backend for a marketplace connecting liquor stores and vendors. Messages update live between buyers and sellers, stock levels track automatically, vendors earn rewards on repeat orders, and invoices get processed and stored in the cloud.  
-[Live site](https://platform.heartofhouse.io/) | [Sign up](https://platform.heartofhouse.io/auth/sign-up)  
-Tech: Node.js, TypeScript, Express, MongoDB, Socket.io, AWS S3/EC2, PM2
+**[CollabEdit](https://collab-edit-pink.vercel.app/)**  
+A real-time editor where multiple people can type into the same document at once without overwriting each other. I built the conflict resolution myself instead of using an existing library like Yjs or Automerge. Deleted text sticks around as a hidden marker for a while so an edit that arrives late doesn't corrupt the document, and each document processes changes through its own queue so pasting text doesn't get scrambled across different people's screens.  
+[Live site](https://collab-edit-pink.vercel.app/) | [GitHub](https://github.com/dax-side/collab_edit)  
+Tech: Node.js, TypeScript, PostgreSQL, WebSocket, Prisma, React, Vite
 
 **[CrossPay](https://cross-payment-five.vercel.app/)**  
 Send money in GBP, and the person on the other end receives it as USDC on Polygon. Deposits come in through Stripe, transaction status updates live on screen instead of needing a refresh, and the fee is a flat 0.5%.  
 [Live site](https://cross-payment-five.vercel.app/) | [GitHub](https://github.com/dax-side/cross_payment)  
 Tech: Node.js, TypeScript, PostgreSQL, Stripe, Polygon Amoy, Socket.io, Pxxl
 
-**[CollabEdit](https://collab-edit-pink.vercel.app/)**  
-A real-time editor where multiple people can type into the same document at once without overwriting each other. I built the conflict resolution myself instead of using an existing library like Yjs or Automerge. Deleted text sticks around as a hidden marker for a while so an edit that arrives late doesn't corrupt the document, and each document processes changes through its own queue so pasting text doesn't get scrambled across different people's screens.  
-[Live site](https://collab-edit-pink.vercel.app/) | [GitHub](https://github.com/dax-side/collab_edit)  
-Tech: Node.js, TypeScript, PostgreSQL, WebSocket, Prisma, React, Vite
 
-**[Swiftmeal](https://github.com/Swiftmealng/Swiftmealng)**  
-A food delivery platform where you can track your order and the rider in real time, and payment goes through automatically at checkout.  
-[Live site](https://swiftmeal-frontend-production.up.railway.app/) | [API Docs](https://swiftmealng-production.up.railway.app/api-docs/)  
-Tech: Node.js/TypeScript backend, React frontend, PostgreSQL, WebSocket, Paystack integration
+**[E-commerce Microservices API](https://github.com/dax-side/ecommerce-microservices-api)**  
+Took an API from 48 requests a second to 716 by caching frequent lookups, reusing database connections instead of opening new ones each time, and adding proper indexes so queries stop scanning the whole table. Load tested at 200 concurrent users.  
+Tech: Node.js, TypeScript, MongoDB, Redis, Docker, Nginx, Prometheus
+
 
 ---
 
